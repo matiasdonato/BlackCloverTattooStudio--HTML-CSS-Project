@@ -9,7 +9,8 @@
     <link rel="shortcut icon" href="./multimedia/blackclover.png">
 
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,12 +30,12 @@
             <div class="header__logo">
                 <div class="header__logo-img">
                     <a href="./index.html">
-                        <img src="./multimedia/blackclover.png" alt="black clover logo">
+                        <img src="./multimedia/blackclover.png" alt="black clover logo" class="animate__animated animate__jackInTheBox">
                     </a>
                 </div>
                 <div class="header__logo-nombre">
-                    <h1>Black Clover</h1>
-                    <h2>Tattoo Studio</h2>
+                    <h1 class="animate__animated animate__fadeInDown">Black Clover</h1>
+                    <h2 class="animate__animated animate__lightSpeedInRight">Tattoo Studio</h2>
                 </div>
             </div>
 
@@ -66,7 +67,7 @@
     <main>
         <div class="hub">
             <img src="./multimedia/manostatuando.jpg" alt="manos tatuando">
-            <h3> Los mejores artistas, la mejor calidad y el mejor precio: Black Clover Tattoo </h3>
+            <h3 data-aos="fade-right" data-aos-duration="1700"> Los mejores artistas, la mejor calidad y el mejor precio: Black Clover Tattoo </h3>
         </div>
     </main>
 
@@ -76,7 +77,10 @@
     </footer>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
