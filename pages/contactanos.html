@@ -8,7 +8,8 @@
     <title>Contactanos</title>
     <link rel="shortcut icon" href="../multimedia/blackclover.png">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +24,12 @@
             <div class="header__logo">
                 <div class="header__logo-img">
                     <a href="../index.html">
-                        <img src="../multimedia/blackclover.png" alt="black clover logo">
+                        <img src="../multimedia/blackclover.png" alt="black clover logo" class="animate__animated animate__jackInTheBox">
                     </a>
                 </div>
                 <div class="header__logo-nombre">
-                    <h1>Black Clover</h1>
-                    <h2>Tattoo Studio</h2>
+                    <h1 class="animate__animated animate__fadeInDown">Black Clover</h1>
+                    <h2 class="animate__animated animate__lightSpeedInRight">Tattoo Studio</h2>
                 </div>
             </div>
 
@@ -58,12 +59,12 @@
     </div>
 
     <div class="title">
-        <h1>Contactanos</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1500">Contactanos</h1>
     </div>
     <main>
-        <section class="contact-form">
-            <h3>Rellena el formulario que aparece a continuacion con tus datos y consultas, en la brevedad las estaremos respondiendo.</h3>
-            <form>
+        <section class="contact-form" data-aos="fade-down" data-aos-duration="1000">
+            <h3 data-aos="fade-right" data-aos-duration="1200">Rellena el formulario que aparece a continuacion con tus datos y consultas, en la brevedad las estaremos respondiendo.</h3>
+            <form data-aos="zoom-in" data-aos-duration="2000">
                 <div class="form-container">
                     <label class="txt" for="nombre">Nombre y Apellido:</label>
                     <input type="text" name="nombre">
@@ -87,7 +88,10 @@
     </footer>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
