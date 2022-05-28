@@ -12,6 +12,25 @@ html {
     --animate-duration: 1250ms
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: 1;
+    color: #020003;
+}
+
+li,
+p {
+    font-weight: 500;
+    color: #020003;
+}
+
 
 /* INDEX, HEADER Y FOOTER------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -55,17 +74,18 @@ body {
 .header__logo-nombre {
     display: flex;
     padding: 10px;
-    color: aliceblue;
 }
 
 .header__logo-nombre h1 {
     font-size: 35px;
+    color: aliceblue;
 }
 
 .header__logo-nombre h2 {
     font-style: italic;
     font-size: 18px;
     align-self: flex-end;
+    color: aliceblue;
 }
 
 .header__navegador ul {
@@ -264,6 +284,28 @@ section {
     height: 50px;
 }
 
+.second-title {
+    display: flex;
+    align-items: center;
+}
+
+.second-title span {
+    border-radius: 25px;
+    margin: 8px;
+}
+
+.off-container {
+    position: relative;
+}
+
+.off {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 4px;
+    border-radius: 70px;
+}
+
 
 /* PAGINA TATUAJES-------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -286,7 +328,7 @@ section {
     position: relative;
     left: 150px;
     border-radius: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -304,27 +346,7 @@ section {
 }
 
 .precios-container {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
     margin-top: 20px;
-}
-
-.precios-aside {
-    display: flex;
-    flex-direction: column;
-    background-color: #FCFBEE;
-    width: 340px;
-    height: 700px;
-    font-size: 18px;
-    position: sticky;
-    top: 75px;
-    right: 100px;
-    border-radius: 30px;
-    padding: 10px 40px 60px 40px;
-    border: rgb(0, 0, 0) solid 4px;
 }
 
 .precios-aside h2 {
@@ -396,6 +418,10 @@ main {
     font-size: 22px;
     text-align: center;
     margin: 10px;
+}
+
+.map {
+    width: 100%;
 }
 
 iframe {
@@ -660,8 +686,6 @@ iframe {
 @media screen and (max-width:1700px) {
     .precios-aside {
         position: relative;
-        height: 380px;
-        width: 800px;
         top: 0;
         right: 0;
         margin-bottom: 20px;
@@ -685,8 +709,6 @@ iframe {
     }
     .precios-aside {
         position: relative;
-        height: 500px;
-        width: 600px;
     }
 }
 
@@ -696,8 +718,6 @@ iframe {
     }
     .precios-aside {
         position: relative;
-        height: 550px;
-        width: 420px;
     }
 }
 
@@ -709,8 +729,6 @@ iframe {
     }
     .precios-aside {
         position: relative;
-        height: 680px;
-        width: 200px;
         font-size: 14px;
     }
     .precios article h2 {

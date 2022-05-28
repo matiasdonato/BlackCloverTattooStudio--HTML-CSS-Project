@@ -8,6 +8,7 @@
     <title>Sobre Nosotros</title>
     <link rel="shortcut icon" href="../multimedia/blackclover.png">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
@@ -39,8 +40,9 @@
                         <li>
                             <a href="../index.html">Inicio</a>
                         </li>
-                        <li>
-                            <a href="./tatuajes.html">Tatuajes</a>
+                        <li class="off-container">
+                            <span class="off badge bg-danger">OFF</span>
+                            <a href="./tatuajes.html">Tatuajes </a>
                         </li>
                         <li>
                             <a href="./precios.html">Precios</a>
@@ -84,11 +86,23 @@
                 <p class="txt">Todo el equipo de Black Clover tiene como objetivo satisfacer absolutamente todas las necesidades de nuestros clientes. Para eso vamos a estar en contacto para que nos cuentes todos los detalles que requiera el tatuaje de tus sueños; nos
                     encargamos de elaborar diseños, probar distintos estilos, y como no: llevar a cabo la sesion en la que realizaremos el tatto.</p>
             </article>
+
             <article class="about__article" data-aos="zoom-in" data-aos-duration="1700">
                 <h2 data-aos="fade-in" data-aos-duration="2000">¿Donde nos Encontramos?</h2>
+
                 <p class="txt">Nuestro estudio se encuentra en Palermo, sobre Ángel Justiniano Carranza al 2225, entre las calles Paraguay y Guatemala</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0110496010893!2d-58.43577974866441!3d-34.578586963581046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59143010707%3A0xa0e76816e9eb1eb8!2s%C3%81ngel%20Justiniano%20Carranza%202225%2C%20C1425FXC%20CABA!5e0!3m2!1ses-419!2sar!4v1651132104759!5m2!1ses-419!2sar "
-                    width="600 " height="450 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Click para desplegar ubicacion
+                    </button>
+                </p>
+                <div class="  mapcollapse" id="collapseExample">
+                    <div class=" card card-body">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0110496010893!2d-58.43577974866441!3d-34.578586963581046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59143010707%3A0xa0e76816e9eb1eb8!2s%C3%81ngel%20Justiniano%20Carranza%202225%2C%20C1425FXC%20CABA!5e0!3m2!1ses-419!2sar!4v1651132104759!5m2!1ses-419!2sar "
+                            width="600 " height="450 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+                    </div>
+                </div>
+
             </article>
         </section>
     </main>
@@ -104,6 +118,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
