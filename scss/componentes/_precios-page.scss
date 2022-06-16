@@ -1,0 +1,58 @@
+/* PAGINA PRECIOS-------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.precios {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.precios article {
+    background-color: $yellow;
+    width: 930px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 150px;
+    border-radius: 30px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.precios article ul {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.precios ul li {
+    margin: 15px;
+}
+
+.precios-container {
+    margin-top: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.precios-aside h2 {
+    align-self: center;
+    margin: 10px;
+}
+
+.anchor {
+    color: $black;
+}
+
+.anchor:hover {
+    color: $gray;
+}
+
+
+/* PAGINA PRECIOS-------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

@@ -1,32 +1,21 @@
-@import"../base/variables";
-@import"../base/maps";
 main {
-    display: flex;
-    justify-content: center;
+    @extend %display-jc_cen;
     .about {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %display-col-ai_cen;
         background-color: lighten($bg-brown, 10%);
         padding-top: 10px;
         width: 90%;
         border-radius: $about-border;
         .about__article {
-            display: flex;
-            flex-direction: column;
             width: 90%;
+            @extend %display-col-ai_cen;
             margin: map-get($article, article-margin);
             padding: map-get($article, article-padding);
             background-color: lighten(map-get($article, bg-article), 10%);
-            align-items: center;
             h2 {
-                display: flex;
-                justify-content: center;
-                font-size: 35px;
-                color: black;
-                margin-bottom: 20px;
-                text-align: center;
+                @extend %display-jc_cen;
+                @include h2-font($h2-size, $h2-color, $h2-margin, $h2-textalign);
             }
             .txt {
                 font-size: $txt-size;

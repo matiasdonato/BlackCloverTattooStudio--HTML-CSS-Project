@@ -1,0 +1,6 @@
+@mixin h2-font ($h2-size, $h2-color, $h2-margin, $h2-textalign) {
+    font-size: $h2-size;
+    color: $h2-color;
+    margin-bottom: $h2-margin;
+    text-align: $h2-textalign;
+}
