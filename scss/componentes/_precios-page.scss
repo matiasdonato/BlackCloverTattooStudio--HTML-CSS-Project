@@ -1,57 +1,102 @@
 /* PAGINA PRECIOS-------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.precios {
-    display: flex;
-    flex-direction: column;
-    font-size: 22px;
-}
-
-.precios article {
-    background-color: $yellow;
-    width: 930px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 150px;
-    border-radius: 30px;
-    padding-top: 20px;
-    margin-bottom: 40px;
-}
-
-.precios article ul {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: center;
-    margin-top: 20px;
-    list-style: none;
-}
-
-.precios ul li {
-    margin: 15px;
-}
-
-.precios-container {
-    margin-top: 20px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.precios-aside h2 {
-    align-self: center;
-    margin: 10px;
-}
-
-.anchor {
-    color: $black;
-}
-
-.anchor:hover {
-    color: $gray;
+.main-precios {
+    @media screen and (max-width: 1400px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .precios-container {
+        margin-top: 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (max-width: 1700px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .precios {
+            display: flex;
+            flex-direction: column;
+            font-size: 22px;
+            @media screen and (max-width: 1700px) {
+                align-items: center;
+            }
+            article {
+                background-color: $yellow;
+                width: 930px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                left: 150px;
+                border-radius: 30px;
+                padding-top: 20px;
+                margin-bottom: 40px;
+                @media screen and (max-width: 1700px) {
+                    left: 0;
+                }
+                @media screen and (max-width: 960px) {
+                    width: 700px;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 500px;
+                }
+                @media screen and (max-width: 540px) {
+                    width: 300px;
+                    height: 300px;
+                    font-size: 18px;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    height: 200px;
+                    justify-content: center;
+                    margin-top: 20px;
+                    list-style: none;
+                    li {
+                        margin: 15px;
+                    }
+                }
+                h2 {
+                    @media screen and (max-width: 540px) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .precios-aside {
+            h2 {
+                align-self: center;
+                margin: 10px;
+            }
+            @media screen and (max-width: 1700px) {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin-bottom: 20px;
+            }
+            @media screen and (max-width: 960px) {
+                position: relative;
+            }
+            @media screen and (max-width: 768px) {
+                position: relative;
+            }
+            @media screen and (max-width: 540px) {
+                position: relative;
+                font-size: 14px;
+            }
+        }
+    }
+    .anchor {
+        color: $black;
+        &:hover {
+            color: $gray;
+        }
+    }
 }
 
 

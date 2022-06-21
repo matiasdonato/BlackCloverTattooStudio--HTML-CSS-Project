@@ -3,134 +3,187 @@
 body {
     background-color: $bg-body;
     font-family: "Radio Canada", sans-serif;
-}
-
-.container-header {
-    height: 60px;
-}
-
-.header {
-    height: 60px;
-    display: flex;
-    background-color: $black;
-    width: 100%;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 1;
-}
-
-.header__logo {
-    padding: 15px;
-    display: flex;
-    align-items: center;
-}
-
-.header__logo img {
-    width: 45px;
-}
-
-.header__logo-img {
-    transition: all 1.3s;
-}
-
-.header__logo-img:hover {
-    transform: rotate(360deg);
-}
-
-.header__logo-nombre {
-    display: flex;
-    padding: 10px;
-}
-
-.header__logo-nombre h1 {
-    font-size: 35px;
-    color: $white;
-}
-
-.header__logo-nombre h2 {
-    font-style: italic;
-    font-size: 18px;
-    align-self: flex-end;
-    color: $white;
-}
-
-.header__navegador ul {
-    list-style: none;
-}
-
-.header__navegador-ul {
-    display: flex;
-    margin-right: 40px;
-}
-
-.header__navegador-ul li {
-    display: flex;
-    height: 60px;
-    align-items: center;
-}
-
-.header__navegador-ul li a:hover {
-    background-color: $yellow;
-    color: $stron-gray;
-    transform: scale(1.2);
-}
-
-.header__navegador-ul li a {
-    display: flex;
-    height: 35px;
-    width: 150px;
-    color: $white;
-    font-size: 18px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 90px;
-    transition: all 0.6s;
-    margin: 15px;
-    text-decoration: none;
-}
-
-.menu-nav__button {
-    display: none;
-}
-
-.hub-size {
-    height: 874px;
-    width: 100%;
-}
-
-.hub-size img {
-    width: 100%;
-    height: 100%;
-    filter: opacity(60%) blur(10px);
-    z-index: -1;
-    position: relative;
-}
-
-.hub-size h3 {
-    text-align: center;
-    color: $white;
-    font-style: italic;
-    position: absolute;
-    left: 20%;
-    right: 20%;
-    bottom: 22%;
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    font-size: 74px;
-    font-weight: 400;
-}
-
-.footer {
-    display: flex;
-    background-color: $stron-gray;
-    width: 100%;
-    height: 35px;
-    align-items: flex-end;
-}
-
-.footer p {
-    display: inline-block;
-    margin: 0 0 7px 20px;
-    color: $white;
+    .container-header {
+        height: 60px;
+        .header {
+            height: 60px;
+            display: flex;
+            background-color: $black;
+            width: 100%;
+            justify-content: space-between;
+            position: fixed;
+            z-index: 1;
+            .header__logo {
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                .header__logo-img {
+                    transition: all 1.3s;
+                    img {
+                        width: 45px;
+                        @media screen and (max-width: 768px) {
+                            width: 40px;
+                        }
+                    }
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
+                }
+                .header__logo-nombre {
+                    display: flex;
+                    padding: 10px;
+                    h1 {
+                        font-size: 35px;
+                        color: $white;
+                        @media screen and (max-width: 768px) {
+                            font-size: 30px;
+                        }
+                        @media screen and (max-width: 367px) {
+                            font-size: 20px;
+                        }
+                    }
+                    h2 {
+                        font-style: italic;
+                        font-size: 18px;
+                        align-self: flex-end;
+                        color: $white;
+                        @media screen and (max-width: 1560px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .header__navegador {
+                .menu-nav {
+                    @media screen and (max-width: 1412px) {
+                        &:hover {
+                            .header__navegador-ul {
+                                display: flex;
+                                right: 0;
+                                flex-direction: column;
+                                background-color: #141414;
+                                margin: 0 0 0 0;
+                                align-items: center;
+                                border-radius: 0 0 45px 45px;
+                                padding: 0 10px 10px 10px;
+                            }
+                        }
+                    }
+                    ul {
+                        list-style: none;
+                    }
+                    .header__navegador-ul {
+                        @media screen and (max-width: 1412px) {
+                            position: absolute;
+                            display: none;
+                            list-style: none;
+                            width: 220px;
+                        }
+                        display: flex;
+                        margin-right: 40px;
+                        li {
+                            display: flex;
+                            height: 60px;
+                            align-items: center;
+                            a {
+                                display: flex;
+                                height: 35px;
+                                width: 150px;
+                                color: $white;
+                                font-size: 18px;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 90px;
+                                transition: all 0.6s;
+                                margin: 15px;
+                                text-decoration: none;
+                                &:hover {
+                                    background-color: $yellow;
+                                    color: $stron-gray;
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                    }
+                    .menu-nav__button {
+                        display: none;
+                        img {
+                            @media screen and (max-width: 1412px) {
+                                height: 50px;
+                            }
+                        }
+                        &:hover {
+                            @media screen and (max-width: 1412px) {
+                                transform: translateX(-15px);
+                            }
+                        }
+                        @media screen and (max-width: 1412px) {
+                            width: 100px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.5s;
+                        }
+                    }
+                    @media screen and (max-width: 1412px) {
+                        display: inline-block;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .hub-size {
+            height: 874px;
+            width: 100%;
+            @media screen and (max-width: 768px) {
+                height: 700px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                filter: opacity(60%) blur(10px);
+                z-index: -1;
+                position: relative;
+            }
+            h3 {
+                text-align: center;
+                color: $white;
+                font-style: italic;
+                position: absolute;
+                left: 20%;
+                right: 20%;
+                bottom: 22%;
+                font-family: "Yanone Kaffeesatz", sans-serif;
+                font-size: 74px;
+                font-weight: 400;
+                @media screen and (max-width: 768px) {
+                    font-size: 45px;
+                    bottom: 30%;
+                }
+                @media screen and (max-width: 435px) {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+    .footer {
+        display: flex;
+        background-color: $stron-gray;
+        width: 100%;
+        height: 35px;
+        align-items: flex-end;
+        p {
+            display: inline-block;
+            margin: 0 0 7px 20px;
+            color: $white;
+        }
+        @media screen and (max-width: 435px) {
+            height: 65px;
+        }
+    }
 }
 
 
